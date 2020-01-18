@@ -1,0 +1,12 @@
+.DS_store
+.config.json
+.dist
+.jshintignore
+.npm
+.project
+.tern-project
+*.backup
+coverage
+nodes/node-red-nodes/
+node_modules
+public
