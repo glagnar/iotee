@@ -1,6 +1,6 @@
 {
-    "name": "esp32-ida-project","
-     "description": "A Node-RED Project to Demonstrate ESP32",
+    "name": "esp32-ida-project",
+    "description": "A Node-RED Project to Demonstrate ESP32",
     "version": "0.0.1",
     "private": true
 }
