@@ -1,0 +1,92 @@
+# Copyright 2020 LeMaRiva|tech lemariva.com
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#         http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+
+"""
+# ES32 TTGO v1.0 
+device_config = {
+    'miso':19,
+    'mosi':27,
+    'ss':18,
+    'sck':5,
+    'dio_0':26,
+    'reset':14,
+    'led':2, 
+}
+"""
+
+# SparkFun ESP32 LoRa Gateway
+device_config = {
+    'miso':12,
+    'mosi':13,
+    'ss':16,
+    'sck':14,
+    'dio_0':26,
+    'reset':36,
+    'led':17, 
+}
+
+"""
+# M5Stack ATOM Matrix
+device_config = {
+    'miso':23,
+    'mosi':19,
+    'ss':22,
+    'sck':33,
+    'dio_0':25,
+    'reset':21,
+    'led':12, 
+}
+"""
+"""
+#M5Stack Fire & LoRA868 Module
+device_config = {
+    'miso':19,
+    'mosi':23,
+    'ss':5,
+    'sck':18,
+    'dio_0':26,
+    'reset':36,
+    'led':12, 
+}
+"""
+
+app_config = {
+    'loop': 200,
+    'sleep': 100,
+}
+
+lora_parameters = {
+    'tx_power_level': 2, 
+    'signal_bandwidth': 'SF7BW125',
+    'spreading_factor': 7,    
+    'coding_rate': 5, 
+    'sync_word': 0x34, 
+    'implicit_header': False,
+    'preamble_length': 8,
+    'enable_CRC': True,
+    'invert_IQ': False,
+}
+
+wifi_config = {
+    'ssid':'',
+    'password':''
+}
+
+ttn_config = {
+    'devaddr': bytearray([ 0x26, 0x01, 0x1C, 0x58 ]),
+    'nwkey': bytearray([ 0x5C, 0x11, 0x3F, 0x40, 0x81, 0xA1, 0xF2, 0x53, 0x61, 0x30, 0x1A, 0xB2, 0x6A, 0x9C, 0x46, 0x14 ]),
+    'app': bytearray([ 0xEB, 0xA4, 0x4C, 0x5C, 0xF3, 0xEC, 0x1F, 0x44, 0x96, 0x44, 0x84, 0xDC, 0x96, 0x2E, 0x70, 0xFF ]),
+    'country': 'EU',
+}
