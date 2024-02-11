@@ -5,7 +5,7 @@ def do_networking():
     wlan.active(True)
     if not wlan.isconnected():
         print('connecting to network...')
-        wlan.connect('IDA', 'IDAIDAIDA')
+        wlan.connect('AHA', 'SUPERSECRET')
         while not wlan.isconnected():
             pass
     print('network config:', wlan.ifconfig())
@@ -17,3 +17,5 @@ def do_networking():
     print(utime.localtime())
 
 do_networking()
+
+# perhaps copy this to your boot.py

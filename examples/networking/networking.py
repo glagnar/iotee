@@ -2,13 +2,13 @@ import network
 
 wlan = network.WLAN(network.STA_IF)
 wlan.active(True)
-wlan.connect('GIOT', 'GIOTGIOTGIOT')
+wlan.connect('AHA', 'SUPERSECRET')
 print('IP address:', wlan.ifconfig()[0])
 
-# Sæt klokken
+# set the internal clock
 from ntptime import settime
 settime()
 
-# Se hvad klokken er
+# check what time it is
 import utime
 utime.localtime()
