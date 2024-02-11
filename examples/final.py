@@ -11,7 +11,7 @@ from neopixel import NeoPixel
 import network
 from ntptime import settime
 
-from simple import MQTTClient
+from example.mqtt.simple import MQTTClient
 
 sensor = dht.DHT22(Pin(32))
 
