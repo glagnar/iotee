@@ -2,7 +2,11 @@ from machine import Pin
 from time import sleep
 import dht
 
-sensor = dht.DHT22(Pin(32))
+# For the FeatherV2 we need to put this pin high.
+# p0 = Pin(2, Pin.OUT)
+# p0.value(1)
+
+sensor = dht.DHT22(Pin(20))
 
 while True:
     try:

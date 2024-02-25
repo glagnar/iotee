@@ -1,24 +1,3 @@
-import network
-
-def do_networking():
-    wlan = network.WLAN(network.STA_IF)
-    wlan.active(True)
-    if not wlan.isconnected():
-        print('connecting to network...')
-        wlan.connect('AHA', 'SUPERSECRET')
-        while not wlan.isconnected():
-            pass
-    print('network config:', wlan.ifconfig())
-
-    from ntptime import settime
-    settime()
-
-    import utime
-    print(utime.localtime())
-
-do_networking()
-
-# perhaps copy this to your boot.py
 
 # This file is executed on every boot (including wake-boot from deepsleep)
 import esp
@@ -44,7 +23,8 @@ def do_connect():
     print(utime.localtime())
     import mip
     
-# do_connect()
+do_connect()
 
 # mip.install('ssd1306')
 # eller mip.install('ssd1306', mpy=False)
+
