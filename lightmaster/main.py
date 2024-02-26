@@ -44,7 +44,7 @@ async def web_rgbw(request):
     return redirect('/')
 
 @app.route('/ironman')
-async def web_blinky(request):
+async def web_ironman(request):
     global current_task
     current_task = uasyncio.create_task(lights.pulsew())
     return "ok"

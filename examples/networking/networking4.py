@@ -15,7 +15,7 @@ def do_connect():
     wlan.active(True)
     if not wlan.isconnected():
         print('connecting to TRENDHIM WIFI...')
-        wlan.connect('DEVICES', 'GIOTGIOTGIOT')
+        wlan.connect('AHA', 'SECRET')
         while not wlan.isconnected():
             pass
     print('network config:', wlan.ifconfig())

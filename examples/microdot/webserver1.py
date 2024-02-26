@@ -5,4 +5,4 @@ app = Microdot()
 async def index(request):
     return 'Hello, world!'
 
-app.run(debug=True)
+app.run(debug=True, port=80)

@@ -1,10 +1,10 @@
 import machine
 import neopixel, time
 
-np = neopixel.NeoPixel(machine.Pin(14), 7, bpp=4)
+np = neopixel.NeoPixel(machine.Pin(14), 16, bpp=4)
 
 def set_colourw(r, g, b, w):
-    for i in range(7):
+    for i in range(16):
         np[i] = (r, g, b, w)
     np.write()
 

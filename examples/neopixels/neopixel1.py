@@ -4,7 +4,7 @@
 import machine
 import neopixel
 
-np = neopixel.NeoPixel(machine.Pin(15), 7, bpp=4) # create NeoPixel driver on GPIO15 for 7 pixels, 4 colours
-np[0] = (255, 255, 255, 255)	# set the first pixel to white - ZERO indexed
-np.write()               		# write data to all pixels
-r, g, b, w = np[0]       		# read first pixel colour
+np = neopixel.NeoPixel(machine.Pin(14), 16, bpp=4, timing=1) # create NeoPixel driver on GPIO14 for 16 pixels, 4 colours
+np[0] = (255, 0, 0, 0)                                       # set the first pixel to white - ZERO indexed
+np.write()                                                   # write data to all pixels
+
